@@ -46,7 +46,37 @@
 // Method to handle when the loginButton button in the menu bar is clicked
 - (IBAction)loginButtonClicked:(id)sender
 {
-    [self performSegueWithIdentifier:@"toOriginalViewControllerSegue" sender:self]; //............... segues to the originalVC
+    NSUserDefaults *defaultInfo = [NSUserDefaults standardUserDefaults]; //................................. allows access to NSUserDeffaults
+    
+    if ([[defaultInfo objectForKey:USER_NAME] isEqualToString:self.usernameTextField.text]) //.............. checks to see if username is valid
+    {
+        if ([[defaultInfo objectForKey:USER_PASSWORD] isEqualToString:self.passwordTextField.text]) //...... checks password validity
+        {
+            [self performSegueWithIdentifier:@"toOriginalViewControllerSegue" sender:self]; //............... segues to the originalVC
+        }
+        else
+        {
+            self.passwordTextField.text = @"";
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"Password invalid, try again"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil, nil];
+            [alert show];
+        }
+    }
+    else
+    {
+        self.usernameTextField.text = @"";
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Username Not found"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    
+    
 }
 
 // Method to handle when the createAccount button in the menu bar is clicked

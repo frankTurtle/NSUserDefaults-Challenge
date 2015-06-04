@@ -51,8 +51,8 @@
     }
     else
     {
-        self.passwordTextField.text = @"";
-        self.confirmPasswordTextField.text = @"";
+        self.passwordTextField.text = @""; //.............. resets the password field
+        self.confirmPasswordTextField.text = @""; //....... resets the confirmPassword Field
         
         UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Error"
                                                        message:@"Passwords don't match, try again"
