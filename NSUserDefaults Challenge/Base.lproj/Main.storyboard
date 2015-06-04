@@ -298,8 +298,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="createAccountButtonClicked:" destination="bmp-c8-4OH" eventType="touchUpInside" id="4L3-Sy-vlJ"/>
-                                    <action selector="createAccountClicked:" destination="bmp-c8-4OH" eventType="touchUpInside" id="eeQ-5e-Ggh"/>
+                                    <action selector="createAccountButtonClicked:" destination="bmp-c8-4OH" eventType="touchUpInside" id="WGB-Ik-VGE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwB-be-3K9">
@@ -330,7 +329,6 @@
                             <constraint firstItem="4IK-iP-eCH" firstAttribute="top" secondItem="tJK-dP-ah0" secondAttribute="bottom" constant="46" id="1RH-Y9-hy9"/>
                             <constraint firstItem="GFW-RQ-AI8" firstAttribute="top" secondItem="ITk-XA-Cg9" secondAttribute="bottom" constant="77" id="A9G-ZR-A8s"/>
                             <constraint firstItem="GFW-RQ-AI8" firstAttribute="leading" secondItem="31d-GU-0q8" secondAttribute="leadingMargin" constant="109" id="AG7-0C-aRP"/>
-                            <constraint firstItem="AwB-be-3K9" firstAttribute="leading" secondItem="t54-WR-5RU" secondAttribute="trailing" constant="28" id="C11-QT-V8L"/>
                             <constraint firstItem="t54-WR-5RU" firstAttribute="top" secondItem="4IK-iP-eCH" secondAttribute="bottom" constant="67" id="di2-UD-fNy"/>
                             <constraint firstItem="4IK-iP-eCH" firstAttribute="leading" secondItem="31d-GU-0q8" secondAttribute="leadingMargin" constant="109" id="gaQ-QD-deQ"/>
                             <constraint firstItem="tJK-dP-ah0" firstAttribute="top" secondItem="GFW-RQ-AI8" secondAttribute="bottom" constant="42" id="oNR-bx-JZG"/>
@@ -356,7 +354,6 @@
                                 <exclude reference="gaQ-QD-deQ"/>
                                 <exclude reference="di2-UD-fNy"/>
                                 <exclude reference="tSR-Kf-OKr"/>
-                                <exclude reference="C11-QT-V8L"/>
                                 <exclude reference="smN-XO-egg"/>
                                 <exclude reference="uk8-dz-ElZ"/>
                             </mask>
@@ -378,7 +375,6 @@
                                 <include reference="gaQ-QD-deQ"/>
                                 <include reference="di2-UD-fNy"/>
                                 <include reference="tSR-Kf-OKr"/>
-                                <include reference="C11-QT-V8L"/>
                                 <include reference="smN-XO-egg"/>
                                 <include reference="uk8-dz-ElZ"/>
                             </mask>

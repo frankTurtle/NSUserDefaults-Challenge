@@ -8,14 +8,6 @@
 
 #import "CreateAccountViewController.h"
 
-@protocol CreateAccountViewControllerDelegate <NSObject>
-
-@required
--(void)cancelAccount;
--(void)createAccount;
-
-@end
-
 @interface CreateAccountViewController ()
 
 @end
@@ -45,14 +37,14 @@
 
 #pragma mark - Handle the Buttons
 
-- (IBAction)createAccountClicked:(id)sender
+- (IBAction)createAccountButtonClicked:(id)sender
 {
-    
+    [self.delegate createAccount];
 }
 
 - (IBAction)cancelButtonClicked:(id)sender
 {
-    
+    [self.delegate cancelAccount];
 }
 
 @end
