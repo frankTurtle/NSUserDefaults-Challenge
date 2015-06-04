@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define     USER_NAME @"username"
+#define USER_PASSWORD @"password"
+
 @interface OriginalViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *usernameLabel;

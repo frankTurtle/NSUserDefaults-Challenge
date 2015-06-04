@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSUserDefaults *defaultInfo = [NSUserDefaults standardUserDefaults];
+    
+    self.passwordLabel.text = [defaultInfo objectForKey:USER_PASSWORD];
+    self.usernameLabel.text = [defaultInfo objectForKey:USER_NAME];
 }
 
 - (void)didReceiveMemoryWarning {

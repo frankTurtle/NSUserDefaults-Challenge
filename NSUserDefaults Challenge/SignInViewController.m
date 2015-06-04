@@ -8,6 +8,7 @@
 
 #import "SignInViewController.h"
 #import "CreateAccountViewController.h"
+#import "OriginalViewController.h"
 
 @interface SignInViewController () <CreateAccountViewControllerDelegate>
 
