@@ -10,6 +10,7 @@
 
 @protocol CreateAccountViewControllerDelegate <NSObject>
 
+@required
 -(void)cancelAccount;
 -(void)createAccount;
 
