@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CreateAccountViewController.h
 //  NSUserDefaults Challenge
 //
 //  Created by OSX on 6/4/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CreateAccountViewController : UIViewController
 
 @end
-
