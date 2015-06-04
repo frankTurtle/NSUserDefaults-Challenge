@@ -14,6 +14,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (strong, nonatomic) IBOutlet UITextField *confirmPasswordTextField;
 
+@property (weak, nonatomic) id delegate;
+
 - (IBAction)createAccountButtonClicked:(id)sender;
 - (IBAction)cancelButtonClicked:(id)sender;
 

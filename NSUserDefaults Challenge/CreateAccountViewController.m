@@ -8,6 +8,13 @@
 
 #import "CreateAccountViewController.h"
 
+@protocol CreateAccountViewControllerDelegate <NSObject>
+
+-(void)cancelAccount;
+-(void)createAccount;
+
+@end
+
 @interface CreateAccountViewController ()
 
 @end
