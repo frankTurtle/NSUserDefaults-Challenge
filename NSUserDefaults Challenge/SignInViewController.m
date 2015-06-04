@@ -34,9 +34,17 @@
 }
 */
 
-- (IBAction)loginButtonClicked:(id)sender {
+#pragma mark - Button handling
+
+
+- (IBAction)loginButtonClicked:(id)sender
+{
+    
 }
 
-- (IBAction)createButtonClicked:(id)sender {
+// Method to handle when the createAccount button in the menu bar is clicked
+- (IBAction)createButtonClicked:(id)sender
+{
+    [self performSegueWithIdentifier:@"toCreateAccountViewControllerSegue" sender:self]; //............... segues to the CreateAccountVC
 }
 @end
