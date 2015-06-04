@@ -15,6 +15,7 @@
 		1085C3811B208896008F4B82 /* NSUserDefaults_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1085C3801B208896008F4B82 /* NSUserDefaults_ChallengeTests.m */; };
 		1085C3931B208A64008F4B82 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1085C3921B208A64008F4B82 /* SignInViewController.m */; };
 		1085C3961B208A71008F4B82 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1085C3951B208A71008F4B82 /* CreateAccountViewController.m */; };
+		1085C3991B208BE6008F4B82 /* OriginalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1085C3981B208BE6008F4B82 /* OriginalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		1085C3921B208A64008F4B82 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		1085C3941B208A71008F4B82 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
 		1085C3951B208A71008F4B82 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		1085C3971B208BE6008F4B82 /* OriginalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalViewController.h; sourceTree = "<group>"; };
+		1085C3981B208BE6008F4B82 /* OriginalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 		1085C38D1B2089F0008F4B82 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1085C3971B208BE6008F4B82 /* OriginalViewController.h */,
+				1085C3981B208BE6008F4B82 /* OriginalViewController.m */,
 				1085C3911B208A64008F4B82 /* SignInViewController.h */,
 				1085C3921B208A64008F4B82 /* SignInViewController.m */,
 				1085C3941B208A71008F4B82 /* CreateAccountViewController.h */,
@@ -235,6 +240,7 @@
 				1085C3961B208A71008F4B82 /* CreateAccountViewController.m in Sources */,
 				1085C36A1B208896008F4B82 /* AppDelegate.m in Sources */,
 				1085C3931B208A64008F4B82 /* SignInViewController.m in Sources */,
+				1085C3991B208BE6008F4B82 /* OriginalViewController.m in Sources */,
 				1085C3671B208896008F4B82 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

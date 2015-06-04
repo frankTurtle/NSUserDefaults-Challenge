@@ -1,18 +1,18 @@
 //
-//  SignInViewController.m
+//  OriginalViewController.m
 //  NSUserDefaults Challenge
 //
 //  Created by OSX on 6/4/15.
 //  Copyright (c) 2015 LebonTech solutions. All rights reserved.
 //
 
-#import "SignInViewController.h"
+#import "OriginalViewController.h"
 
-@interface SignInViewController ()
+@interface OriginalViewController ()
 
 @end
 
-@implementation SignInViewController
+@implementation OriginalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,9 +34,4 @@
 }
 */
 
-- (IBAction)loginButtonClicked:(id)sender {
-}
-
-- (IBAction)createButtonClicked:(id)sender {
-}
 @end

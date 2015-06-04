@@ -34,4 +34,9 @@
 }
 */
 
+- (IBAction)createAccountClicked:(id)sender {
+}
+
+- (IBAction)cancelButtonClicked:(id)sender {
+}
 @end
