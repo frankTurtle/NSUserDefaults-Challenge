@@ -36,15 +36,17 @@
 
 #pragma mark - Button handling
 
-
+// Method to handle when the loginButton button in the menu bar is clicked
 - (IBAction)loginButtonClicked:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"toOriginalViewControllerSegue" sender:self]; //............... segues to the originalVC
 }
+    
 
 // Method to handle when the createAccount button in the menu bar is clicked
 - (IBAction)createButtonClicked:(id)sender
 {
     [self performSegueWithIdentifier:@"toCreateAccountViewControllerSegue" sender:self]; //............... segues to the CreateAccountVC
 }
+
 @end
