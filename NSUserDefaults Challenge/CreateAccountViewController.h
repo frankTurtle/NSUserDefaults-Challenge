@@ -16,6 +16,9 @@
 
 @end
 
+#define     USER_NAME @"username"
+#define USER_PASSWORD @"password"
+
 @interface CreateAccountViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextField *usernameTextField;

@@ -39,12 +39,34 @@
 
 - (IBAction)createAccountButtonClicked:(id)sender
 {
-    [self.delegate createAccount];
-}
+    NSUserDefaults *defaultInfo = [NSUserDefaults standardUserDefaults]; //............... create a way to access / store NSUserDefaults
+    
+    [defaultInfo setObject:self.usernameTextField.text forKey:USER_NAME]; //.............. stores the username
+    
+    if ([self.passwordTextField.text isEqualToString:self.confirmPasswordTextField.text]) //. verifies the passwords match, throws error if not
+    {
+        [defaultInfo setObject:self.passwordTextField.text forKey:USER_PASSWORD];
+        [self.delegate createAccount]; //................................................ calls the delegates method createAccount
+
+    }
+    else
+    {
+        self.passwordTextField.text = @"";
+        self.confirmPasswordTextField.text = @"";
+        
+        UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Error"
+                                                       message:@"Passwords don't match, try again"
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    
+   }
 
 - (IBAction)cancelButtonClicked:(id)sender
 {
-    [self.delegate cancelAccount];
+    [self.delegate cancelAccount]; //.............. calls the delegates method cancelAccount
 }
 
 @end
